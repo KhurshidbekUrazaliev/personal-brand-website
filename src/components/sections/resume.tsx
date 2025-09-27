@@ -17,8 +17,9 @@ const skills: Skill[] = [
 
   // Languages
   { name: 'English', level: 95, category: 'language' },
-  { name: 'Korean', level: 75, category: 'language' },
-  { name: 'Russian', level: 90, category: 'language' },
+  { name: 'Korean', level: 60, category: 'language' },
+  { name: 'Russian', level: 60, category: 'language' },
+  { name: 'Turkish', level: 50, category: 'language' },
   { name: 'Uzbek', level: 100, category: 'language' },
 
   // Soft Skills
@@ -87,7 +88,7 @@ const achievements: Achievement[] = [
   {
     id: '3',
     title: 'Multilingual Proficiency',
-    description: 'Fluent in 4 languages: English, Korean, Russian, Uzbek',
+    description: 'Fluent in 5 languages: English, Korean, Russian, Turkish, Uzbek',
     date: '2024',
     category: 'personal',
   },

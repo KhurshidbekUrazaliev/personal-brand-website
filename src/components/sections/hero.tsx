@@ -20,7 +20,7 @@ export function Hero() {
             className="mx-auto mb-8 h-32 w-32 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1"
           >
             <div className="h-full w-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl font-bold text-gray-600 dark:text-gray-400">
-              F
+              K
             </div>
           </motion.div>
 
@@ -31,7 +31,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl"
           >
-            Faris
+            Khurshidbek Urazaliev
           </motion.h1>
 
           {/* Tagline */}
@@ -110,7 +110,7 @@ export function Hero() {
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                4
+                5
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
                 Languages

@@ -28,16 +28,16 @@ const values = [
 
 const journey = [
   {
-    location: 'Uzbekistan',
-    description: 'Born and raised, laying the foundation of my values',
+    location: 'Besharyk, Uzbekistan',
+    description: 'Grew up on the quiet edges, building foundational values',
   },
   {
     location: 'Busan, South Korea',
-    description: 'Currently studying and expanding my global perspective',
+    description: 'Chasing big dreams on vibrant shores, expanding horizons',
   },
   {
-    location: 'Global Goals',
-    description: 'Building for a future with worldwide impact',
+    location: 'Global Impact',
+    description: 'Building ventures that grow beyond me and give back',
   },
 ];
 
@@ -73,20 +73,22 @@ export function About() {
             </h3>
             <div className="mt-6 space-y-6 text-gray-600 dark:text-gray-300">
               <p>
-                From the heart of Uzbekistan to the innovative shores of Busan, my journey 
-                has been shaped by diverse cultures and unwavering faith. I&apos;m passionate about 
-                leveraging technology to create meaningful impact while staying true to my values.
+                I grew up on the quiet edges of Besharyk, Uzbekistan, and today I&apos;m chasing big dreams 
+                on the vibrant shores of Busan. My journey blends cultures, curiosity, and a faith 
+                that keeps me grounded while I reach for more.
               </p>
               <p>
-                Currently pursuing excellence in AI and web development, I&apos;ve achieved 
-                significant milestones including a 1400+ SAT score (aiming for 1600) and 
-                IELTS 7.5 band score. My multilingual abilities in English, Korean, Russian, 
-                and Uzbek open doors to global opportunities.
+                I&apos;m diving deep into AI, machine learning, data science, and web development, aiming to 
+                build technology that makes a real difference. Along the way, I&apos;ve earned a 1400+ SAT score 
+                (on my way to 1600) and a 7.5 IELTS band, and I speak English, Korean (60%), Russian (60%), 
+                Turkish (50%), and Uzbek, which opens doors to opportunities around the world.
               </p>
               <p>
-                I believe in the four C&apos;s of Leverage: <strong>Code</strong>, <strong>Content</strong>, 
-                <strong>Capital</strong>, and <strong>Community</strong>. These principles guide my 
-                approach to building sustainable value in the digital age.
+                But tech is just one part of the picture. I&apos;m equally excited about investing, real estate, 
+                sales, and marketing—the skills that turn ideas into lasting impact. Guided by the Four C&apos;s 
+                of Leverage—<strong>Code</strong>, <strong>Content</strong>, <strong>Capital</strong>, and 
+                <strong>Community</strong>—I&apos;m focused on creating projects and ventures that grow beyond me 
+                and give back to others.
               </p>
             </div>
           </motion.div>

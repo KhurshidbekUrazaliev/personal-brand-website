@@ -9,22 +9,22 @@ const contactMethods = [
     icon: Mail,
     title: 'Email',
     description: 'Get in touch for collaborations',
-    value: 'your.email@example.com',
-    href: 'mailto:your.email@example.com',
+    value: 'khurshidbekurazaliev@gmail.com',
+    href: 'mailto:khurshidbekurazaliev@gmail.com',
   },
   {
     icon: MessageCircle,
     title: 'LinkedIn',
     description: 'Connect professionally',
-    value: 'linkedin.com/in/faris',
-    href: 'https://linkedin.com/in/yourusername',
+    value: 'linkedin.com/in/khurshidbekurazaliev',
+    href: 'https://www.linkedin.com/in/khurshidbekurazaliev',
   },
   {
     icon: Github,
     title: 'GitHub',
     description: 'Check out my code',
-    value: 'github.com/faris',
-    href: 'https://github.com/yourusername',
+    value: 'github.com/KhurshidbekUrazaliev',
+    href: 'https://github.com/KhurshidbekUrazaliev',
   },
   {
     icon: MapPin,
@@ -306,7 +306,7 @@ export function Contact() {
             </p>
             <div className="flex justify-center space-x-4">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:khurshidbekurazaliev@gmail.com"
                 className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Start a Conversation

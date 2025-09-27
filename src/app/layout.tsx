@@ -12,8 +12,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Faris - AI & Tech Innovator',
-    template: '%s | Faris',
+    default: 'Khurshidbek Urazaliev - AI & Tech Innovator',
+    template: '%s | Khurshidbek Urazaliev',
   },
   description:
     'AI & Tech Innovator | Multilingual Learner | Faith-Driven Creator. Building tech, mastering languages, and creating leverage for a bigger future.',
@@ -24,21 +24,26 @@ export const metadata: Metadata = {
     'Machine Learning',
     'Programming',
     'Portfolio',
+    'Data Science',
+    'Investing',
+    'Real Estate',
+    'Sales',
+    'Marketing',
   ],
-  authors: [{ name: 'Faris' }],
-  creator: 'Faris',
+  authors: [{ name: 'Khurshidbek Urazaliev' }],
+  creator: 'Khurshidbek Urazaliev',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://your-domain.com',
-    title: 'Faris - AI & Tech Innovator',
+    url: 'https://personal-brand-website-qz5fs4sdf-khurshidbeks-projects-06af2cf9.vercel.app',
+    title: 'Khurshidbek Urazaliev - AI & Tech Innovator',
     description:
       'AI & Tech Innovator | Multilingual Learner | Faith-Driven Creator',
-    siteName: 'Faris Portfolio',
+    siteName: 'Khurshidbek Urazaliev Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Faris - AI & Tech Innovator',
+    title: 'Khurshidbek Urazaliev - AI & Tech Innovator',
     description:
       'AI & Tech Innovator | Multilingual Learner | Faith-Driven Creator',
   },
