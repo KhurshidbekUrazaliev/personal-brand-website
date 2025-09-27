@@ -1,0 +1,81 @@
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { ThemeProvider } from '@/components/providers/theme-provider';
+import { Header } from '@/components/layout/header';
+import { Footer } from '@/components/layout/footer';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Faris - AI & Tech Innovator',
+    template: '%s | Faris',
+  },
+  description:
+    'AI & Tech Innovator | Multilingual Learner | Faith-Driven Creator. Building tech, mastering languages, and creating leverage for a bigger future.',
+  keywords: [
+    'AI',
+    'Technology',
+    'Web Development',
+    'Machine Learning',
+    'Programming',
+    'Portfolio',
+  ],
+  authors: [{ name: 'Faris' }],
+  creator: 'Faris',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://your-domain.com',
+    title: 'Faris - AI & Tech Innovator',
+    description:
+      'AI & Tech Innovator | Multilingual Learner | Faith-Driven Creator',
+    siteName: 'Faris Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Faris - AI & Tech Innovator',
+    description:
+      'AI & Tech Innovator | Multilingual Learner | Faith-Driven Creator',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange={false}
+        >
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1 pt-16">{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
