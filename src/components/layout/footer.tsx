@@ -4,22 +4,22 @@ import Link from 'next/link';
 const socialLinks = [
   {
     name: 'GitHub',
-    href: 'https://github.com/yourusername',
+    href: 'https://github.com/KhurshidbekUrazaliev',
     icon: Github,
   },
   {
     name: 'LinkedIn',
-    href: 'https://linkedin.com/in/yourusername',
+    href: 'https://www.linkedin.com/in/khurshidbekurazaliev/',
     icon: Linkedin,
   },
   {
     name: 'Email',
-    href: 'mailto:your.email@example.com',
+    href: 'mailto:khurshidbekurazaliev@gmail.com',
     icon: Mail,
   },
   {
     name: 'Instagram',
-    href: 'https://instagram.com/yourusername',
+    href: 'https://www.instagram.com/ummah_x/',
     icon: Instagram,
   },
 ];
@@ -47,7 +47,7 @@ export function Footer() {
 
           {/* Copyright */}
           <p className="text-center text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} Faris. Built with Next.js &
+            © {new Date().getFullYear()} Khurshidbek. Built with Next.js &
             TailwindCSS.
           </p>
 
