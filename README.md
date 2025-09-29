@@ -1,8 +1,6 @@
-# Personal Brand Website
-
 A high-performance personal portfolio website built with Next.js, TypeScript, and TailwindCSS. This website serves as a personal brand hub showcasing skills, achievements, projects, and professional journey.
 
-## ✨ Features
+ Features
 
 - **Modern Tech Stack**: Next.js 15, TypeScript, TailwindCSS
 - **Responsive Design**: Fully responsive across all devices
@@ -12,7 +10,7 @@ A high-performance personal portfolio website built with Next.js, TypeScript, an
 - **Performance Focused**: Optimized Core Web Vitals
 - **Accessible**: Following WCAG guidelines
 
-## 🚀 Sections
+Sections
 
 1. **Hero Section**: Introduction with call-to-action buttons
 2. **About Me**: Personal story, values, and journey map
@@ -20,7 +18,7 @@ A high-performance personal portfolio website built with Next.js, TypeScript, an
 4. **Projects Portfolio**: Categorized project showcase
 5. **Contact Form**: Collaboration opportunities and contact methods
 
-## 🛠️ Tech Stack
+Tech Stack
 
 - **Framework**: Next.js 15 with App Router
 - **Language**: TypeScript
@@ -30,16 +28,14 @@ A high-performance personal portfolio website built with Next.js, TypeScript, an
 - **Icons**: Lucide React
 - **Deployment**: Vercel
 
-## 🏃‍♂️ Getting Started
+Getting Started
 
 ### 1. Install dependencies
-
 ```bash
 npm install
 ```
 
 ### 2. Run development server
-
 ```bash
 npm run dev
 ```
@@ -47,16 +43,13 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### 3. Build for production
-
 ```bash
 npm run build
 npm run start
 ```
+Customization
 
-## 🎨 Customization
-
-### Personal Information
-
+Personal Information
 Update the following files with your personal information:
 
 - `src/components/sections/hero.tsx` - Name, tagline, and stats
@@ -66,17 +59,15 @@ Update the following files with your personal information:
 - `src/components/sections/contact.tsx` - Contact information
 - `src/components/layout/footer.tsx` - Social media links
 
-### SEO & Metadata
-
+SEO & Metadata
 Update metadata in `src/app/layout.tsx`:
-
 - Site title and description
 - OpenGraph images and URLs
 - Keywords and author information
 
-## 🚀 Deployment
+Deployment
 
-### Deploy to Vercel (Recommended)
+Deploy to Vercel (Recommended)
 
 1. **Connect to Vercel**:
    - Go to [vercel.com](https://vercel.com)
@@ -90,14 +81,14 @@ Update metadata in `src/app/layout.tsx`:
    - Add your custom domain in Vercel project settings
    - Update DNS records as instructed
 
-## 📝 Scripts
+Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-## 🎯 Key Features Implemented
+Key Features Implemented
 
 - ✅ Responsive navigation with mobile menu
 - ✅ Dark/light mode toggle
@@ -108,14 +99,9 @@ Update metadata in `src/app/layout.tsx`:
 - ✅ SEO optimization
 - ✅ Performance optimization
 
-## 📧 Contact
+Contact
 
 For questions or collaboration opportunities:
-
 - Email: your.email@example.com
 - LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
 - GitHub: [github.com/yourusername](https://github.com/yourusername)
-
----
-
-Built with ❤️ using Next.js and TailwindCSS
