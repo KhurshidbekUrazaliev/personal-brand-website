@@ -88,7 +88,8 @@ const achievements: Achievement[] = [
   {
     id: '3',
     title: 'Multilingual Proficiency',
-    description: 'Fluent in 5 languages: English, Korean, Russian, Turkish, Uzbek',
+    description:
+      'Fluent in 5 languages: English, Korean, Russian, Turkish, Uzbek',
     date: '2024',
     category: 'personal',
   },
@@ -109,7 +110,7 @@ const SkillBar = ({ skill }: { skill: Skill }) => (
       </span>
       <span className="text-gray-600 dark:text-gray-300">{skill.level}%</span>
     </div>
-    <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+    <div className="h-2 w-full rounded-full bg-gray-200 dark:bg-gray-700">
       <motion.div
         className="h-2 rounded-full bg-blue-600"
         initial={{ width: 0 }}
@@ -122,12 +123,16 @@ const SkillBar = ({ skill }: { skill: Skill }) => (
 );
 
 export function Resume() {
-  const technicalSkills = skills.filter((skill) => skill.category === 'technical');
-  const languageSkills = skills.filter((skill) => skill.category === 'language');
+  const technicalSkills = skills.filter(
+    (skill) => skill.category === 'technical'
+  );
+  const languageSkills = skills.filter(
+    (skill) => skill.category === 'language'
+  );
   const softSkills = skills.filter((skill) => skill.category === 'soft');
 
   return (
-    <section id="resume" className="py-24 bg-gray-50 dark:bg-gray-800">
+    <section id="resume" className="bg-gray-50 py-24 dark:bg-gray-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -136,20 +141,21 @@ export function Resume() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
             Resume & Skills
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-            A comprehensive overview of my technical expertise, experience, and achievements
+            A comprehensive overview of my technical expertise, experience, and
+            achievements
           </p>
-          
+
           {/* Download Resume Button */}
           <div className="mt-8">
             <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
+              className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             >
               <Download className="h-4 w-4" />
               Download PDF Resume
@@ -165,14 +171,14 @@ export function Resume() {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            <h3 className="mb-12 text-center text-2xl font-bold text-gray-900 dark:text-white">
               Skills & Expertise
             </h3>
-            
+
             <div className="grid gap-12 lg:grid-cols-3">
               {/* Technical Skills */}
               <div>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+                <h4 className="mb-6 text-xl font-semibold text-gray-900 dark:text-white">
                   Technical Skills
                 </h4>
                 <div className="space-y-6">
@@ -184,7 +190,7 @@ export function Resume() {
 
               {/* Language Skills */}
               <div>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+                <h4 className="mb-6 text-xl font-semibold text-gray-900 dark:text-white">
                   Languages
                 </h4>
                 <div className="space-y-6">
@@ -196,7 +202,7 @@ export function Resume() {
 
               {/* Soft Skills */}
               <div>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+                <h4 className="mb-6 text-xl font-semibold text-gray-900 dark:text-white">
                   Soft Skills
                 </h4>
                 <div className="space-y-6">
@@ -217,10 +223,10 @@ export function Resume() {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            <h3 className="mb-12 text-center text-2xl font-bold text-gray-900 dark:text-white">
               Experience
             </h3>
-            
+
             <div className="space-y-8">
               {experiences.map((exp, index) => (
                 <motion.div
@@ -229,27 +235,32 @@ export function Resume() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700"
+                  className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-900"
                 >
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                  <div className="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
                         {exp.title}
                       </h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium">
+                      <p className="font-medium text-blue-600 dark:text-blue-400">
                         {exp.company}
                       </p>
                     </div>
-                    <div className="flex items-center text-gray-600 dark:text-gray-300 mt-2 sm:mt-0">
-                      <Calendar className="h-4 w-4 mr-2" />
+                    <div className="mt-2 flex items-center text-gray-600 sm:mt-0 dark:text-gray-300">
+                      <Calendar className="mr-2 h-4 w-4" />
                       {exp.duration}
                     </div>
                   </div>
-                  
-                  <ul className="space-y-2 mb-4">
+
+                  <ul className="mb-4 space-y-2">
                     {exp.description.map((item, i) => (
-                      <li key={i} className="text-gray-600 dark:text-gray-300 flex items-start">
-                        <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                      <li
+                        key={i}
+                        className="flex items-start text-gray-600 dark:text-gray-300"
+                      >
+                        <span className="mr-2 text-blue-600 dark:text-blue-400">
+                          •
+                        </span>
                         {item}
                       </li>
                     ))}
@@ -260,7 +271,7 @@ export function Resume() {
                       {exp.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full"
+                          className="rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-200"
                         >
                           {tech}
                         </span>
@@ -281,10 +292,10 @@ export function Resume() {
             transition={{ duration: 0.5, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            <h3 className="mb-12 text-center text-2xl font-bold text-gray-900 dark:text-white">
               Key Achievements
             </h3>
-            
+
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {achievements.map((achievement, index) => (
                 <motion.div
@@ -293,15 +304,15 @@ export function Resume() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 1.0 + index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 text-center"
+                  className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm dark:border-gray-700 dark:bg-gray-900"
                 >
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                  <h4 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
                     {achievement.title}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  <p className="mb-4 text-sm text-gray-600 dark:text-gray-300">
                     {achievement.description}
                   </p>
-                  <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">
+                  <span className="text-xs font-medium text-blue-600 dark:text-blue-400">
                     {achievement.date}
                   </span>
                 </motion.div>

@@ -33,11 +33,13 @@ A high-performance personal portfolio website built with Next.js, TypeScript, an
 ## 🏃‍♂️ Getting Started
 
 ### 1. Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 2. Run development server
+
 ```bash
 npm run dev
 ```
@@ -45,6 +47,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### 3. Build for production
+
 ```bash
 npm run build
 npm run start
@@ -53,6 +56,7 @@ npm run start
 ## 🎨 Customization
 
 ### Personal Information
+
 Update the following files with your personal information:
 
 - `src/components/sections/hero.tsx` - Name, tagline, and stats
@@ -63,7 +67,9 @@ Update the following files with your personal information:
 - `src/components/layout/footer.tsx` - Social media links
 
 ### SEO & Metadata
+
 Update metadata in `src/app/layout.tsx`:
+
 - Site title and description
 - OpenGraph images and URLs
 - Keywords and author information
@@ -105,6 +111,7 @@ Update metadata in `src/app/layout.tsx`:
 ## 📧 Contact
 
 For questions or collaboration opportunities:
+
 - Email: your.email@example.com
 - LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
 - GitHub: [github.com/yourusername](https://github.com/yourusername)

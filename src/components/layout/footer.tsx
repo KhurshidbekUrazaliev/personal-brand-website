@@ -37,7 +37,7 @@ export function Footer() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                className="text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 aria-label={item.name}
               >
                 <item.icon className="h-6 w-6" />
@@ -47,7 +47,8 @@ export function Footer() {
 
           {/* Copyright */}
           <p className="text-center text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} Faris. Built with Next.js & TailwindCSS.
+            © {new Date().getFullYear()} Faris. Built with Next.js &
+            TailwindCSS.
           </p>
 
           {/* Mission Statement */}

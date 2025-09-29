@@ -43,7 +43,7 @@ const journey = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-white dark:bg-gray-900">
+    <section id="about" className="bg-white py-24 dark:bg-gray-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,11 +52,12 @@ export function About() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
             About Me
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-            A journey of faith, growth, and innovation across cultures and technologies
+            A journey of faith, growth, and innovation across cultures and
+            technologies
           </p>
         </motion.div>
 
@@ -73,22 +74,27 @@ export function About() {
             </h3>
             <div className="mt-6 space-y-6 text-gray-600 dark:text-gray-300">
               <p>
-                I grew up on the quiet edges of Besharyk, Uzbekistan, and today I&apos;m chasing big dreams 
-                on the vibrant shores of Busan. My journey blends cultures, curiosity, and a faith 
-                that keeps me grounded while I reach for more.
+                I grew up on the quiet edges of Besharyk, Uzbekistan, and today
+                I&apos;m chasing big dreams on the vibrant shores of Busan. My
+                journey blends cultures, curiosity, and a faith that keeps me
+                grounded while I reach for more.
               </p>
               <p>
-                I&apos;m diving deep into AI, machine learning, data science, and web development, aiming to 
-                build technology that makes a real difference. Along the way, I&apos;ve earned a 1400+ SAT score 
-                (on my way to 1600) and a 7.5 IELTS band, and I speak English, Korean (60%), Russian (60%), 
-                Turkish (50%), and Uzbek, which opens doors to opportunities around the world.
+                I&apos;m diving deep into AI, machine learning, data science,
+                and web development, aiming to build technology that makes a
+                real difference. Along the way, I&apos;ve earned a 1400+ SAT
+                score (on my way to 1600) and a 7.5 IELTS band, and I speak
+                English, Korean (60%), Russian (60%), Turkish (50%), and Uzbek,
+                which opens doors to opportunities around the world.
               </p>
               <p>
-                But tech is just one part of the picture. I&apos;m equally excited about investing, real estate, 
-                sales, and marketing—the skills that turn ideas into lasting impact. Guided by the Four C&apos;s 
-                of Leverage—<strong>Code</strong>, <strong>Content</strong>, <strong>Capital</strong>, and 
-                <strong>Community</strong>—I&apos;m focused on creating projects and ventures that grow beyond me 
-                and give back to others.
+                But tech is just one part of the picture. I&apos;m equally
+                excited about investing, real estate, sales, and marketing—the
+                skills that turn ideas into lasting impact. Guided by the Four
+                C&apos;s of Leverage—<strong>Code</strong>,{' '}
+                <strong>Content</strong>, <strong>Capital</strong>, and
+                <strong>Community</strong>—I&apos;m focused on creating projects
+                and ventures that grow beyond me and give back to others.
               </p>
             </div>
           </motion.div>
@@ -133,7 +139,7 @@ export function About() {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white">
+          <h3 className="text-center text-2xl font-bold text-gray-900 dark:text-white">
             Core Values
           </h3>
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -144,7 +150,7 @@ export function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                 viewport={{ once: true }}
-                className="text-center p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow"
+                className="rounded-lg border border-gray-200 p-6 text-center transition-shadow hover:shadow-lg dark:border-gray-700"
               >
                 <div className="flex justify-center">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900">
@@ -170,11 +176,11 @@ export function About() {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white">
+          <h3 className="text-center text-2xl font-bold text-gray-900 dark:text-white">
             Quick Facts
           </h3>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
-            <div className="text-center p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+            <div className="rounded-lg bg-gray-50 p-6 text-center dark:bg-gray-800">
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">
                 1600
               </div>
@@ -182,7 +188,7 @@ export function About() {
                 Target SAT Score
               </div>
             </div>
-            <div className="text-center p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+            <div className="rounded-lg bg-gray-50 p-6 text-center dark:bg-gray-800">
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">
                 2000
               </div>
@@ -190,7 +196,7 @@ export function About() {
                 Chess Rating Goal
               </div>
             </div>
-            <div className="text-center p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+            <div className="rounded-lg bg-gray-50 p-6 text-center dark:bg-gray-800">
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">
                 4C&apos;s
               </div>

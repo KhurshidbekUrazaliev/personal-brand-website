@@ -27,7 +27,7 @@ export function Header() {
             href="/"
             className="text-2xl font-bold text-gray-900 dark:text-white"
           >
-            Faris
+            Khurshidbek
           </Link>
 
           {/* Desktop Navigation */}
@@ -36,7 +36,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                className="text-gray-700 transition-colors hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
               >
                 {item.name}
               </Link>
@@ -60,7 +60,7 @@ export function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="rounded-lg p-2 text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 md:hidden"
+              className="rounded-lg p-2 text-gray-700 hover:bg-gray-100 md:hidden dark:text-gray-300 dark:hover:bg-gray-800"
               aria-label="Toggle mobile menu"
             >
               {mobileMenuOpen ? (

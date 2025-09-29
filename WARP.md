@@ -9,6 +9,7 @@ A high-performance personal portfolio website built with Next.js 15, TypeScript,
 ## Development Commands
 
 ### Essential Commands
+
 ```bash
 # Development server with Turbopack
 npm run dev
@@ -30,6 +31,7 @@ npx tsc --noEmit
 ```
 
 ### Development Workflow
+
 - The project uses **Turbopack** for both dev and build for faster compilation
 - Development server runs on `http://localhost:3000`
 - Hot reload is enabled for all file changes
@@ -38,6 +40,7 @@ npx tsc --noEmit
 ## Architecture Overview
 
 ### Tech Stack
+
 - **Framework**: Next.js 15 with App Router
 - **Language**: TypeScript with strict mode
 - **Styling**: TailwindCSS v4 with PostCSS
@@ -47,6 +50,7 @@ npx tsc --noEmit
 - **Font**: Inter (Google Fonts)
 
 ### Directory Structure
+
 ```
 src/
 ├── app/                    # Next.js App Router
@@ -74,22 +78,26 @@ src/
 ### Key Design Patterns
 
 #### Component Architecture
+
 - **Section-based layout**: Each major page area is a separate component in `src/components/sections/`
 - **Layout components**: Reusable header/footer in `src/components/layout/`
 - **Provider pattern**: Theme provider wraps the entire app for dark/light mode
 
 #### State Management
+
 - **Theme state**: Managed by `next-themes` with system preference detection
 - **Mobile menu**: Local state in header component
 - **Form state**: Local state in contact component (when implemented)
 
 #### Styling Approach
+
 - **Utility-first**: TailwindCSS for all styling
 - **Responsive design**: Mobile-first approach with `sm:`, `md:`, `lg:` breakpoints
 - **Dark mode**: Automatic dark/light mode with `dark:` variants
 - **Animations**: Framer Motion for smooth transitions and scroll animations
 
 #### Type Safety
+
 - **Strict TypeScript**: All components are fully typed
 - **Interface definitions**: Data structures defined in `src/types/index.ts`
 - **Props typing**: All component props explicitly typed
@@ -97,18 +105,21 @@ src/
 ### Key Features Implementation
 
 #### Navigation System
+
 - Fixed header with backdrop blur effect
 - Smooth scroll to sections using anchor links (#home, #about, etc.)
 - Mobile-responsive hamburger menu with slide animations
 - Theme toggle with icon switching
 
 #### Animation Strategy
+
 - **Framer Motion**: Used for all animations
 - **Scroll-triggered**: Sections animate in as they come into view
 - **Staggered animations**: Elements animate with delays for polished effect
 - **Hover states**: Interactive elements have smooth hover transitions
 
 #### Content Management
+
 - **Personal Information**: Hardcoded in component files, easy to update
 - **SEO Metadata**: Centralized in `src/app/layout.tsx`
 - **Social Links**: Configured in footer component
@@ -117,18 +128,21 @@ src/
 ## Customization Guide
 
 ### Personal Information Updates
+
 - **Hero section**: Update name, tagline, stats in `src/components/sections/hero.tsx`
 - **SEO metadata**: Update title, description, OpenGraph data in `src/app/layout.tsx`
 - **Contact details**: Update in `src/components/sections/contact.tsx`
 - **Social links**: Update in `src/components/layout/footer.tsx`
 
 ### Content Structure
+
 - **Projects**: Add/modify projects using the `Project` interface
-- **Skills**: Add/modify skills using the `Skill` interface  
+- **Skills**: Add/modify skills using the `Skill` interface
 - **Experience**: Add/modify work history using the `Experience` interface
 - **Achievements**: Add/modify accomplishments using the `Achievement` interface
 
 ### Styling Customization
+
 - **Colors**: Modify TailwindCSS theme in configuration
 - **Fonts**: Change in `src/app/layout.tsx` (currently Inter)
 - **Animations**: Adjust Framer Motion parameters in component files
@@ -137,6 +151,7 @@ src/
 ## Deployment Configuration
 
 ### Vercel Deployment
+
 - **Framework**: Auto-detected as Next.js
 - **Build command**: `npm run build` (with Turbopack)
 - **Output**: `.next` directory
@@ -144,6 +159,7 @@ src/
 - **Cache headers**: Optimized for fonts and images (1 year cache)
 
 ### Environment Setup
+
 - **Node.js**: Requires Node.js 18.x or higher
 - **Package manager**: npm (lock file present)
 - **TypeScript**: Version 5.x with strict configuration
